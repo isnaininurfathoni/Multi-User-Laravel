@@ -20,7 +20,7 @@ class RoleControllers extends Controller
         $katakunci=$request->katakunci;
         if(strlen($katakunci)){
             $data = User::where('name','like',"%$katakunci%")
-            ->orWhere('email','like',"%$katakunci%")->paginate(10);
+            ->orWhere('role','like',"%$katakunci%")->paginate(10);
         }else{
             $data= User::paginate(10);
         }

@@ -20,7 +20,7 @@
   @method('PUT')
   <div class="my-3 p-3 bg-body rounded shadow-sm">
       <div class="mb-3 row">
-          <label for="name" class="col-sm-2 col-form-label">Name</label>
+          <label for="name" class="col-sm-2 col-form-label" >Name</label>
           <div class="col-sm-10">
               {{ $data->name }}
           </div>
